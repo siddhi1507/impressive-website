@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressive Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+        }
+        .container {
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            margin: 20px;
+        }
+        h1 {
+            color: #ff69b4;
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 1em 0;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .images img {
+            max-width: 300px;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .images img:hover {
+            transform: scale(1.1);
+        }
+        .quotes {
+            margin-top: 30px;
+        }
+        .quotes p {
+            font-size: 1.5em;
+            color: #ff69b4;
+        }
+        .question {
+            margin-top: 30px;
+            font-size: 1.5em;
+            color: #ff69b4;
+        }
+        .reveal-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, Beautiful!</h1>
+        <p>This is a special website just for you. Hope you like it!</p>
+        <div class="images">
+            <img src="image1.jpg.png" alt="Image 1">
+            <img src="image2.jpg.png" alt="Image 2">
+            <img src="image3.jpg.png" alt="Image 3">
+        </div>
+        <div class="quotes">
+            <p>"You are the reason I wake up with a smile every morning."</p>
+            <p>"I love you not only for what you are but for what I am when I am with you."</p>
+            <p>"You are my today and all of my tomorrows."</p>
+        </div>
+        <div class="question">
+            <p>Will you go on a date with me?</p>
+            <button class="reveal-btn" onclick="revealAnswer()">Click to Reveal</button>
+        </div>
+    </div>
+
+    <script>
+        function revealAnswer() {
+            alert('I hope your answer is YES! 😊');
+        }
+    </script>
+</body>
+</html>
